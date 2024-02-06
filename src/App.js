@@ -3,6 +3,7 @@ import First from './First';
 import {BrowserRouter,Routes,Route, Link} from 'react-router-dom';
 import Routing from './Routing';
 import Lazy2 from './Lazy2';
+import Counter from './Counter';
 // import Routing from './Routing';
 const LazyComp=React.lazy(()=>import ('./Routing'));
 const Lazy2Comp= React.lazy(()=>import ('./Lazy2'));
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
       <div>hello world</div>
       <First/>
+      <Counter/>
       <BrowserRouter>
       {/* <Routes>
          <Route path='/routing' element={<React.Suspense={}>
