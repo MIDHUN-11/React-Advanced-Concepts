@@ -4,6 +4,7 @@ import {BrowserRouter,Routes,Route, Link} from 'react-router-dom';
 import Routing from './Routing';
 import Lazy2 from './Lazy2';
 import Counter from './Counter';
+import CBParent from './CBParent';
 // import Routing from './Routing';
 const LazyComp=React.lazy(()=>import ('./Routing'));
 const Lazy2Comp= React.lazy(()=>import ('./Lazy2'));
@@ -35,7 +36,7 @@ function App() {
       <Route path='/logic' element={<React.Suspense fallback={<p>page is loading</p>}><RoutingComp/></React.Suspense>}></Route>
       </Routes>
       </BrowserRouter>
-     
+     <CBParent/>
     </div>
   );
 }
