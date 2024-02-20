@@ -6,6 +6,7 @@ import Lazy2 from './Lazy2';
 import Counter from './Counter';
 import CBParent from './CBParent';
 import UseMemoComp from './UseMemoComp';
+import UseCallbackComp from './UseCallbackComp';
 // import Routing from './Routing';
 const LazyComp=React.lazy(()=>import ('./Routing'));
 const Lazy2Comp= React.lazy(()=>import ('./Lazy2'));
@@ -39,6 +40,7 @@ function App() {
       </BrowserRouter>
      <CBParent/>
      <UseMemoComp/>
+     <UseCallbackComp/>
     </div>
   );
 }
