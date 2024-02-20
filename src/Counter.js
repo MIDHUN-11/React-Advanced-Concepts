@@ -5,6 +5,7 @@ const Counter=()=>{
     const[count,setCount]=useState(0);
     const myref=useRef(0);
     usePrevCustomHook(count);
+    console.log(usePrevCustomHook);
     return(
         <>
         <div><button onClick={()=>{
